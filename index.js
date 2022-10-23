@@ -3,9 +3,10 @@ const mongoose=require('mongoose');
 const User=require('./models/user')
 const url=require('url');
 const app=express();
+// mongodb://localhost:27017/users
 
 app.use(express.json());
-mongoose.connect('mongodb://localhost:27017/users',
+mongoose.connect('mongodb+srv://aditi901:test123@cluster0.oda71gx.mongodb.net/test?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
